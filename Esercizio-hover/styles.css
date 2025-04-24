@@ -1,0 +1,50 @@
+
+.menu {
+    display: flex;
+    background-color: aqua;
+    padding: 10px 15px;
+    gap: 36px;
+    color: green;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: red;
+}
+
+.dropdown {
+    position: relative;
+    min-width: 100%;
+    visibility: visible;
+}
+
+.dropdown-body{
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    opacity: 0;
+    background-color: whitesmoke;
+    list-style-type: none;
+    box-shadow: 2px 2px 6px black;
+    transition: all ease-in-out 0.25s;
+
+}
+
+.dropdown-body a {
+    display: block;
+    color: brown;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.dropdown:hover .dropdown-body{
+    visibility: visible;
+    opacity: 1;
+    margin-top: 0;
+}
